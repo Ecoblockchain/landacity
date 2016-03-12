@@ -1,0 +1,14 @@
+-@ var body: String
+-@ var title: String
+- import controllers._
+
+!!!5
+html
+  head
+    title= title
+    link.ui(rel='stylesheet' type='text/css' href='#{routes.Assets.at("lib/semantic-ui/dist/semantic.css")}')
+    link(rel='stylesheet' type='text/css' href='#{routes.Assets.at("css/index.css")}')
+    script(src='#{routes.Assets.at("lib/jquery/dist/jquery.js")}')
+    script(src='#{routes.Assets.at("lib/semantic-ui/dist/semantic.js")}')
+  body
+    != body
